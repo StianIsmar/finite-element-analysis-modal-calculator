@@ -52,5 +52,5 @@ print " "
 print "Iteration 0: ", sd_i, ", Sum of all distances: ", round(sum(sd_i),2),"percentage_deviation_1", pd_i, "closest freq: ", cf_i
 print "Iteration 1: ", sd_1, ", Sum of all distances: ", round(sum(sd_1),2),"percentage_deviation_1", pd_1, "closest freq: ", cf_1
 print "Iteration 2: ", sd_2, ", Sum of all distances: ", round(sum(sd_2),2),"percentage_deviation_1", pd_2, "closest freq: ", cf_2
-print "Iteration 3: ", sd_3, ", Sum of all distances: ", round(sum(sd_3),2),"percentage_deviation_1", pd_3, "closest freq: ", cf_3
+print "Iteration 3: ", sd_3, ", Sum of all distances: ", round(sum(sd_3),2),"percentage_deviation_1", pd_3, "closest freq: ", cf_3 # Something is not right here...
 print "Iteration 4: ", sd_4, ", Sum of all distances: ", round(sum(sd_4),2),"percentage_deviation_1", pd_4, "closest freq: ", cf_4 # THis is the same as 3 but a little lighter
