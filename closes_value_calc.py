@@ -1,3 +1,18 @@
+import csv
+import os
+
+print (os.getcwd())
+
+
+
+
+#with open('SpeakerResults.csv','rb') as csvfile:
+#    reader = csv.reader(csvfile, delimiter=',', quotechar='|')
+#    for row in reader:
+#        print(row)
+        #add data to list or other data structure
+
+
 # Avoid these frequencies:
 
 freq = {
@@ -16,6 +31,14 @@ def calc_closest_value(listOfModes):
             if abs(test_mode-v) < shortest_distance[counter]:
                 shortest_distance[counter] = abs(test_mode-v)
         counter += 1
+    for i in range(len(shortest_distance)):
+        shortest_distance[i] = round(shortest_distance[i],2)
     return shortest_distance
-initial_distance = calc_closest_value([81.43,119.821,122.935,136.298,149.285,157.287,173.983,18])
+
+initial_distance = calc_closest_value([81.43,119.821,122.935,136.298,149.285,
+157.287,173.983,187.425,190.763,218.249,218.514,239.525,254.236,258.396])
+
+iteration_1 = calc_closest_value([84.7,114,129,155,173,179,193,205,219,228,239,264])
+
 print(initial_distance)
+print(iteration_1)
