@@ -21,7 +21,14 @@ print (os.getcwd())
 #		"d" : 146.83,
 #		"g" : 195.998
 #	}
+
+# The guitar frequencies to be avoided:
 freq= [82.24,110.0,146.83,195.998]
+
+# Function takes in list of eigenfrequencies and loops through them to find:
+## - The distance between the closest frequency to each guitar string
+## - The percentage deviation between the closest value to each guitar frequency
+## - The closest eigenfrequency to each guitar string
 def calc_closest_value(listOfModes):
     shortest_distance = [9999,9999,9999,9999]
     percentage_deviation=[999,999,999,999]
@@ -58,7 +65,15 @@ sd_4,pd_4,cf_4 = calc_closest_value([108.5,165.9,168.8,194.61,207.788,210.789,21
 # Iteration 5:
 sd_5,pd_5,cf_5 = calc_closest_value([109.3,166.5,170.9,205.437,209.7,213.327,225.071,247.489,251.488,270.748,282.817,294.158,297.834])
 
-sd_6,pd_6,cf_6 = calc_closest_value([111.168,170.705,173.732,205.937,212.338,216.525,225.881,247.204,254.626,278.666,284.748,295.958,300.859,332.537])
+# Iteration 6:
+# Tykkere stjerne og ekstra bjelke:
+sd_7,pd_7,cf_7 = calc_closest_value([112.705,173.102,173.922,206.121,212.514,220.889,226.37,248.156,256.608,280.569,284.818,287.188,301.011,334.288])
+
+# Tykkere stjerne:
+# sd_6,pd_6,cf_6 = calc_closest_value([111.168,170.705,173.732,205.937,212.338,216.525,225.881,247.204,254.626,278.666,284.748,295.958,300.859,332.537])
+
+# Tykkere stjerne og ekstra bjelke:
+sd_7,pd_7,cf_7 = calc_closest_value([112.705,173.102,173.922,206.121,212.514,220.889,226.37,248.156,256.608,280.569,284.818,287.188,301.011,334.288])
 
 
 #2 sd_2, pd_2, cf_2 = calc_closest_value([84.58868,119.1945,126.17,155.5039,171.2618,178.0062,192.0339,202.034,216.3787,228.0677,238.2435,256.6063,262.3457,273.5223])
@@ -73,4 +88,4 @@ print "Iteration 2: ", sd_2, ", Sum of all distances: ", round(sum(sd_2),2),"per
 print "Iteration 3: ", sd_3, ", Sum of all distances: ", round(sum(sd_3),2),"percentage_deviation_1", pd_3, "closest freq: ", cf_3 # Something is not right here...
 print "Iteration 4: ", sd_4, ", Sum of all distances: ", round(sum(sd_4),2),"percentage_deviation_1", pd_4, "closest freq: ", cf_4 # THis is the same as 3 but a little lighter
 print "Iteration 5: ", sd_5, ", Sum of all distances: ", round(sum(sd_5),2),"percentage_deviation_1", pd_5, "closest freq: ", cf_5
-print "Iteration 6: ", sd_6, ", Sum of all distances: ", round(sum(sd_6),2),"percentage_deviation_1", pd_6, "closest freq: ", cf_6 
+print "Iteration 7: ", sd_7, ", Sum of all distances: ", round(sum(sd_7),2),"percentage_deviation_1", pd_7, "closest freq: ", cf_7
