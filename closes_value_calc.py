@@ -48,6 +48,19 @@ sd_1, pd_1, cf_1 = calc_closest_value([84.7,114,129,155,173,179,193,205,219,228,
 
 # Iteration 2:
 sd_2, pd_2, cf_2 = calc_closest_value([100,154,159,190,197,201,209,239,244,253,270,282,292,314])
+
+# Itearasjon 3:
+sd_3,pd_3,cf_3 = calc_closest_value([103,158,163.7,191.3,200.5,204.6,210.3,243.4,243.9,263.0,276.2,284.0,293.7,316.8])
+
+# Iteration 4:
+sd_4,pd_4,cf_4 = calc_closest_value([108.5,165.9,168.8,194.61,207.788,210.789,215.073,245.372,250.341,269.366,280.791,291.153,296.252,327.251])
+
+# Iteration 5:
+sd_5,pd_5,cf_5 = calc_closest_value([109.3,166.5,170.9,205.437,209.7,213.327,225.071,247.489,251.488,270.748,282.817,294.158,297.834])
+
+sd_6,pd_6,cf_6 = calc_closest_value([111.168,170.705,173.732,205.937,212.338,216.525,225.881,247.204,254.626,278.666,284.748,295.958,300.859,332.537])
+
+
 #2 sd_2, pd_2, cf_2 = calc_closest_value([84.58868,119.1945,126.17,155.5039,171.2618,178.0062,192.0339,202.034,216.3787,228.0677,238.2435,256.6063,262.3457,273.5223])
 #3 sd_3,pd_3,cf_3 = calc_closest_value([96.51,127.77,157.77,166.851,190.444,193.626,207.809,215.534,239.22,247.18,265.388,271.2,284.447,286.4])
 #4 sd_4,pd_4,cf_4 = calc_closest_value([52.7,58.4,87,103,108,125,129,132,155,162,170,183,194])
@@ -57,5 +70,7 @@ print " "
 print "Iteration 0: ", sd_i, ", Sum of all distances: ", round(sum(sd_i),2),"percentage_deviation_1", pd_i, "closest freq: ", cf_i
 print "Iteration 1: ", sd_1, ", Sum of all distances: ", round(sum(sd_1),2),"percentage_deviation_1", pd_1, "closest freq: ", cf_1
 print "Iteration 2: ", sd_2, ", Sum of all distances: ", round(sum(sd_2),2),"percentage_deviation_1", pd_2, "closest freq: ", cf_2
-# print "Iteration 3: ", sd_3, ", Sum of all distances: ", round(sum(sd_3),2),"percentage_deviation_1", pd_3, "closest freq: ", cf_3 # Something is not right here...
-# print "Iteration 4: ", sd_4, ", Sum of all distances: ", round(sum(sd_4),2),"percentage_deviation_1", pd_4, "closest freq: ", cf_4 # THis is the same as 3 but a little lighter
+print "Iteration 3: ", sd_3, ", Sum of all distances: ", round(sum(sd_3),2),"percentage_deviation_1", pd_3, "closest freq: ", cf_3 # Something is not right here...
+print "Iteration 4: ", sd_4, ", Sum of all distances: ", round(sum(sd_4),2),"percentage_deviation_1", pd_4, "closest freq: ", cf_4 # THis is the same as 3 but a little lighter
+print "Iteration 5: ", sd_5, ", Sum of all distances: ", round(sum(sd_5),2),"percentage_deviation_1", pd_5, "closest freq: ", cf_5
+print "Iteration 6: ", sd_6, ", Sum of all distances: ", round(sum(sd_6),2),"percentage_deviation_1", pd_6, "closest freq: ", cf_6 
