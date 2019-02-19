@@ -1,18 +1,6 @@
 import csv
 import os
 
-print (os.getcwd())
-
-
-
-
-#with open('SpeakerResults.csv','rb') as csvfile:
-#    reader = csv.reader(csvfile, delimiter=',', quotechar='|')
-#    for row in reader:
-#        print(row)
-        #add data to list or other data structure
-
-
 # Avoid these frequencies:
 
 #freq = {
