@@ -88,4 +88,4 @@ print "Iteration 2: ", sd_2, ", Sum of all distances: ", round(sum(sd_2),2),"per
 print "Iteration 3: ", sd_3, ", Sum of all distances: ", round(sum(sd_3),2),"percentage_deviation_1", pd_3, "closest freq: ", cf_3 # Something is not right here...
 print "Iteration 4: ", sd_4, ", Sum of all distances: ", round(sum(sd_4),2),"percentage_deviation_1", pd_4, "closest freq: ", cf_4 # THis is the same as 3 but a little lighter
 print "Iteration 5: ", sd_5, ", Sum of all distances: ", round(sum(sd_5),2),"percentage_deviation_1", pd_5, "closest freq: ", cf_5
-print "Iteration 7: ", sd_7, ", Sum of all distances: ", round(sum(sd_7),2),"percentage_deviation_1", pd_7, "closest freq: ", cf_7
+print "Iteration 6: ", sd_7, ", Sum of all distances: ", round(sum(sd_7),2),"percentage_deviation_1", pd_7, "closest freq: ", cf_7
